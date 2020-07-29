@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Style.module.scss";
+import styles from "./style.module.scss";
 import { yieldExpression } from "@babel/types";
 
 export function WelcomePage() {
@@ -18,7 +18,7 @@ export function WelcomePage() {
           <hr></hr>
           <p> ARTIST && DEVELOPER </p>
         </div>
-        <div className={styles.darkerHalf}></div>
+        {/* <div className={styles.darkerHalf}></div> */}
       </div>
       <div className={styles.arrowDown}></div>
     </div>

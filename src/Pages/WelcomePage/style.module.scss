@@ -11,11 +11,9 @@
     rgba(240, 101, 105, 1) 100%
   );
 
-  // background-color: #ff7d81;
   min-height: 93vh;
   min-width: 100vh;
   color: white;
-  // margin-top: -16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,12 +55,12 @@
   position: absolute;
   right: 0;
   min-height: 70px;
-  color: white;
+  color: #fff2f3;
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
   p {
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
