@@ -1,0 +1,32 @@
+.welcome {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 90vh;
+  color: white;
+  // margin-top: -16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .name {
+    color: white;
+    p {
+      font-size: 50px;
+      margin-top: 0;
+    }
+  }
+}
+.navBar {
+  position: absolute;
+  // margin-top: 5px;
+  right: 0;
+  min-height: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  p {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
