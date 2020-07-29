@@ -1,24 +1,60 @@
 .welcome {
   text-align: center;
-  background-color: #282c34;
-  min-height: 90vh;
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgba(255, 193, 127, 1) 0%,
+  //   rgba(255, 125, 129, 1) 100%
+  // );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 193, 127, 1) 0%,
+    rgba(240, 101, 105, 1) 100%
+  );
+
+  // background-color: #ff7d81;
+  min-height: 93vh;
+  min-width: 100vh;
   color: white;
   // margin-top: -16px;
   display: flex;
   justify-content: center;
   align-items: center;
+  // box-shadow: 0px 13px 61px -1px rgba(242, 107, 111, 0.35);
 
+  box-shadow: 0px 13px 42px 0px rgba(20, 14, 15, 0.35);
   .name {
-    color: white;
-    p {
+    color: #fff2f3;
+    // color: #282c34;
+    z-index: 1000;
+    .title {
       font-size: 50px;
       margin-top: 0;
+      margin-bottom: 20px;
+    }
+    hr {
+      width: 100px;
+      background: #fff2f3;
+      height: 3px;
+      border-radius: 10px;
+      border-style: solid;
+    }
+    p {
+      color: #fff2f3;
+      font-size: 20px;
     }
   }
+  // .darkerHalf {
+  //   background-color: #f26b6f;
+  //   position: absolute;
+  //   opacity: 0.5;
+  //   min-height: 93vh;
+  //   min-width: 50vw;
+  //   left: 0;
+  // }
 }
+
 .navBar {
   position: absolute;
-  // margin-top: 5px;
   right: 0;
   min-height: 70px;
   color: white;

@@ -4,8 +4,9 @@ import { WelcomePage } from "./Pages/WelcomePage";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <WelcomePage />
+      <div className={styles.arrowDown}></div>
     </div>
   );
 }

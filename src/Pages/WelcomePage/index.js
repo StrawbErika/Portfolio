@@ -1,21 +1,26 @@
 import React from "react";
 import styles from "./Style.module.scss";
+import { yieldExpression } from "@babel/types";
 
 export function WelcomePage() {
   return (
     <div>
       <div className={styles.navBar}>
-        <p> Work</p>
-        <p> Art</p>
-        <p> About</p>
-        <p> Contact</p>
+        <p> WORK</p>
+        <p> ART</p>
+        <p> ABOUT</p>
+        <p> CONTACT</p>
       </div>
 
       <div className={styles.welcome}>
         <div className={styles.name}>
-          <p> Erika Nepomuceno</p>
+          <p className={styles.title}> ERIKA LOUISE NEPOMUCENO</p>
+          <hr></hr>
+          <p> ARTIST && DEVELOPER </p>
         </div>
+        <div className={styles.darkerHalf}></div>
       </div>
+      <div className={styles.arrowDown}></div>
     </div>
   );
 }
