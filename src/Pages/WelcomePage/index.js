@@ -4,7 +4,7 @@ import { yieldExpression } from "@babel/types";
 
 export function WelcomePage() {
   return (
-    <div>
+    <div className={styles.page}>
       <div className={styles.navBar}>
         <p> WORK</p>
         <p> ART</p>
