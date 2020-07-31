@@ -7,7 +7,6 @@ function App() {
   return (
     <div className={styles.app}>
       <WelcomePage />
-      <div className={styles.arrowDown}></div>
       <WorkPage />
     </div>
   );

@@ -7,21 +7,14 @@ export function Project({
   Picture,
   Count,
   Percent,
-  Height,
-  Width
+  PageId
 }) {
-  console.log(Percent);
-  console.log(Height);
-  console.log(Width);
   return (
-    <div className={styles.project}>
+    <div id={PageId} className={styles.project}>
       <div className={styles.pictureContainer}>
         <div className={styles.vl}>
           <div className={styles.circleTop}> </div>
-          <div
-            className={styles.picture}
-            styles={{ height: Height / 100, width: Width / 100 }}
-          >
+          <div className={styles.picture}>
             <img
               src={Picture}
               style={{

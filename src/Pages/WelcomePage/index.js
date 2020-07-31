@@ -6,23 +6,25 @@ import { yieldExpression } from "@babel/types";
 export function WelcomePage() {
   return (
     <div className={styles.page}>
-      <div className={styles.navBar}>
-        <p> WORK</p>
-        {/* <p> ART</p> */}
-        <p> ABOUT</p>
-        <p> CONTACT</p>
-      </div>
-
-      <div className={styles.welcome}>
-        <div className={styles.name}>
-          <p className={styles.title}> ERIKA LOUISE NEPOMUCENO</p>
-          <hr></hr>
-          <p> ARTIST && DEVELOPER </p>
+      <div className={styles.pageContent}>
+        <div className={styles.navBar}>
+          <p> WORK</p>
+          {/* <p> ART</p> */}
+          <p> ABOUT</p>
+          <p> CONTACT</p>
         </div>
-        {/* <div className={styles.darkerHalf}></div> */}
-        <MouseScroll />
+
+        <div className={styles.welcome}>
+          <div className={styles.name}>
+            <p className={styles.title}> ERIKA LOUISE NEPOMUCENO</p>
+            <hr></hr>
+            <p> ARTIST && DEVELOPER </p>
+          </div>
+          {/* <div className={styles.darkerHalf}></div> */}
+          <MouseScroll />
+        </div>
       </div>
-      {/* <div className={styles.arrowDown}></div> */}
+      <div className={styles.arrowDown}></div>
     </div>
   );
 }

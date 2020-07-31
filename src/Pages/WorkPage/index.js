@@ -5,7 +5,7 @@ import project1 from "./../../Assets/Images/minkSquare.jpg";
 
 export function WorkPage() {
   return (
-    <div id="works" className={styles.work}>
+    <div className={styles.work}>
       <Project
         Title={"SINING"}
         Description={"stupid SP lmao"}
@@ -19,6 +19,7 @@ export function WorkPage() {
         Count={"02"}
         Percent={"50%"}
         Picture={project1}
+        PageId={"works"}
       />
     </div>
   );
