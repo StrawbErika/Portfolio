@@ -7,6 +7,7 @@
   // padding-top: calc(10% - 35px);
   // height: 95%;
   .workCount {
+    margin-top: 7%;
     background-color: #111517;
     // margin-top: 100px;
     color: #fff2f3;
@@ -28,12 +29,12 @@
       display: flex;
       padding-top: 15px;
       .number {
-        font-size: 150px;
+        font-size: 160px;
       }
       .titleDescription {
         padding-left: 15px;
         .title {
-          font-size: 60px;
+          font-size: 80px;
         }
       }
     }

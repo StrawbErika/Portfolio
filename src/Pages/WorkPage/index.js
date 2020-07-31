@@ -10,11 +10,11 @@ export function WorkPage() {
       {/* <div id="works" className={styles.work}> */}
       <Project
         Title={"SINING"}
-        Description={"stupid SP lmao"}
+        Description={" an ok SP lmao"}
         Count={"01"}
         Percent={"25%"}
         Picture={project1}
-        // PageId={"works"}
+        PageId={"works"}
       />
       <Project
         Title={"not"}
@@ -30,7 +30,8 @@ export function WorkPage() {
         Count={"03"}
         Percent={"75%"}
         Picture={project1}
-        PageId={"works"}
+        // style={{ zIndex: -2 }}
+        // PageId={"works"}
       />
 
       <Project
@@ -39,6 +40,7 @@ export function WorkPage() {
         Count={"04"}
         Percent={"100%"}
         Picture={project1}
+        // style={{ zIndex: -1 }}
         // PageId={"works"}
       />
     </div>
