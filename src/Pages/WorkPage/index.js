@@ -30,7 +30,7 @@ export function WorkPage() {
         Count={"03"}
         Percent={"75%"}
         Picture={project1}
-        // PageId={"works"}
+        PageId={"works"}
       />
 
       <Project
@@ -39,7 +39,7 @@ export function WorkPage() {
         Count={"04"}
         Percent={"100%"}
         Picture={project1}
-        PageId={"works"}
+        // PageId={"works"}
       />
     </div>
   );
