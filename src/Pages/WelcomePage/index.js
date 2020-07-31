@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
+import { MouseScroll } from "./../../Components/MouseScroll";
 import { yieldExpression } from "@babel/types";
 
 export function WelcomePage() {
@@ -7,7 +8,7 @@ export function WelcomePage() {
     <div className={styles.page}>
       <div className={styles.navBar}>
         <p> WORK</p>
-        <p> ART</p>
+        {/* <p> ART</p> */}
         <p> ABOUT</p>
         <p> CONTACT</p>
       </div>
@@ -19,8 +20,9 @@ export function WelcomePage() {
           <p> ARTIST && DEVELOPER </p>
         </div>
         {/* <div className={styles.darkerHalf}></div> */}
+        <MouseScroll />
       </div>
-      <div className={styles.arrowDown}></div>
+      {/* <div className={styles.arrowDown}></div> */}
     </div>
   );
 }

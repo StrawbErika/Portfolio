@@ -5,7 +5,7 @@ import project1 from "./../../Assets/Images/minkSquare.jpg";
 
 export function WorkPage() {
   return (
-    <div className={styles.work}>
+    <div id="works" className={styles.work}>
       <Project
         Title={"SINING"}
         Description={"stupid SP lmao"}

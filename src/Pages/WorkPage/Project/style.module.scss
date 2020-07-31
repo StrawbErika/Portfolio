@@ -1,7 +1,10 @@
 .project {
+  background-color: #111517;
   position: relative;
-  height: 100%;
+  height: calc(95vh - 100px);
+  // height: 95%;
   .workCount {
+    background-color: #111517;
     margin-top: 100px;
     color: #fff2f3;
 
@@ -71,17 +74,21 @@
         top: 150px;
         right: -200px;
         z-index: 100;
-        background-position: center;
-        background-size: cover;
+        object-fit: contain;
+        overflow: hidden;
+        img {
+          // max-height: 100%;
+          height: 100%;
+        }
       }
       .bottomShadow {
         background-color: rgba(240, 101, 105, 1);
         opacity: 0.5;
         position: absolute;
-        height: 400px;
-        width: 400px;
         top: 180px;
         right: -230px;
+        height: 400px;
+        width: 400px;
         // z-index: -1;
       }
 

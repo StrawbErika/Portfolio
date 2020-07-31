@@ -1,13 +1,27 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { ProgressBar } from "../../../Components/ProgressBar";
-export function Project({ Title, Description, Picture, Count, Percent }) {
+export function Project({
+  Title,
+  Description,
+  Picture,
+  Count,
+  Percent,
+  Height,
+  Width
+}) {
+  console.log(Percent);
+  console.log(Height);
+  console.log(Width);
   return (
     <div className={styles.project}>
       <div className={styles.pictureContainer}>
         <div className={styles.vl}>
           <div className={styles.circleTop}> </div>
-          <div className={styles.picture}>
+          <div
+            className={styles.picture}
+            styles={{ height: Height / 100, width: Width / 100 }}
+          >
             <img
               src={Picture}
               style={{
@@ -16,9 +30,11 @@ export function Project({ Title, Description, Picture, Count, Percent }) {
               alt="Logo"
             />
           </div>
-          <div className={styles.bottomShadow}></div>
+          <div
+            className={styles.bottomShadow}
+            // styles={{ height: Height, width: Width }}
+          ></div>
           <div className={styles.circleBottom}></div>
-          {/* Picture & bottom shadow as components */}
         </div>
       </div>
       <div className={styles.workCount}>
