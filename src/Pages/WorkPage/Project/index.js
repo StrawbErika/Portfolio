@@ -4,6 +4,7 @@ import { ProgressBar } from "../../../Components/ProgressBar";
 export function Project({
   Title,
   Description,
+  TechStack,
   Picture,
   Count,
   Percent,
@@ -23,10 +24,7 @@ export function Project({
               alt="Logo"
             />
           </div>
-          <div
-            className={styles.bottomShadow}
-            // styles={{ height: Height, width: Width }}
-          ></div>
+          <div className={styles.bottomShadow}></div>
           <div className={styles.circleBottom}></div>
         </div>
       </div>
@@ -39,6 +37,7 @@ export function Project({
           <div className={styles.number}> {Count} </div>
           <div className={styles.titleDescription}>
             <div className={styles.title}> {Title} </div>
+            <div className={styles.techStack}> {TechStack}</div>
             <div className={styles.description}>{Description}</div>
           </div>
         </div>
