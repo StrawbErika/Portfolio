@@ -13,6 +13,10 @@ export function ProjectText({ ListOfDetails }) {
           <div className={styles.number}> {ListOfDetails.Count} </div>
           <div className={styles.titleDescription}>
             <div className={styles.title}> {ListOfDetails.Title} </div>
+            {ListOfDetails.Subtitle ? (
+              <div className={styles.subtitle}> {ListOfDetails.Subtitle} </div>
+            ) : null}
+
             <div className={styles.techStack}> {ListOfDetails.TechStack}</div>
             <div className={styles.description}>
               {ListOfDetails.Description}

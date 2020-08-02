@@ -22,7 +22,8 @@ export function WorkPage() {
               Repository: "https://github.com/StrawbErika/SINING"
             },
             {
-              Title: "SOKOBAN GAME & SOLVER",
+              Title: "SOKOBAN",
+              Subtitle: "GAME & SOLVER",
               Description:
                 "Programmed a game modeled  after Sokoban, with an Artificial Intelligence that is able to solve the board, and show the solution.",
               TechStack: "Java",
@@ -32,7 +33,8 @@ export function WorkPage() {
               Repository: "https://github.com/StrawbErika/Sokoban-Maze-Solver"
             },
             {
-              Title: "WORDSCAPE SOLVER",
+              Title: "WORDSCAPE",
+              Subtitle: "SOLVER",
               Description:
                 "Developed a Wordscape Solver application with Backtracking algorithm.",
               TechStack: "ElectronJS, JavaScript, HTML5, CSS",

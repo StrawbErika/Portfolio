@@ -22,7 +22,7 @@
     align-items: center;
     width: 35%;
     .textContainer {
-      width: 100%;
+      // width: 100%;
       align-items: center;
       display: flex;
       padding-top: 15px;
@@ -33,14 +33,20 @@
         padding-left: 15px;
         .techStack {
           font-style: italic;
+          white-space: nowrap;
+          overflow: hidden;
         }
         .title {
           font-size: 80px;
         }
+        .subtitle {
+          margin-top: -15px;
+          font-size: 35px;
+        }
       }
     }
     .button {
-      margin-left: 10%;
+      // margin-left: 10%;
       margin-top: 25px;
       width: 300px;
       border: 3px solid;
