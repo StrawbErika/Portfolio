@@ -1,124 +1,13 @@
 .project {
-  background-color: #111517;
   position: relative;
-  padding-top: 4%;
-  padding-bottom: 2%;
+  // padding-top: 4%;
   height: calc(95vh - 100px);
   // padding-top: calc(10% - 35px);
   // height: 95%;
-  .workCount {
-    margin-top: 7%;
-    background-color: #111517;
-    // margin-top: 100px;
-    color: #fff2f3;
-
-    font-size: 25px;
-    margin-left: 10%;
-  }
-  .middleContainer {
-    display: flex;
-    flex-direction: column;
-    top: 36vh;
-    position: absolute;
-    color: #fff2f3;
-    margin-left: 10%;
-    align-items: center;
-    width: 35%;
-    .textContainer {
-      align-items: center;
-      display: flex;
-      padding-top: 15px;
-      .number {
-        font-size: 160px;
-      }
-      .titleDescription {
-        padding-left: 15px;
-        .techStack {
-          font-style: italic;
-        }
-        .title {
-          font-size: 80px;
-        }
-      }
-    }
-    .button {
-      margin-top: 30px;
-      width: 50%;
-      border: 3px solid;
-      border-image-slice: 1;
-      border-radius: 40px;
-      border-radius: 15px;
-      background: none;
-      border-image-source: linear-gradient(
-        to right,
-        rgba(255, 193, 127, 1) 0%,
-        rgba(240, 101, 105, 1) 100%
-      );
-      padding: 20px;
-      color: #fff2f3;
-      text-align: center;
-      justify-content: center;
-    }
-  }
-  .pictureContainer {
-    .vl {
-      // top: 0;
-      top: 5%;
-      // top: -35px;
-      position: absolute;
-      background: linear-gradient(
-        to bottom,
-        rgba(255, 193, 127, 1) 0%,
-        rgba(240, 101, 105, 1) 100%
-      );
-
-      height: 85vh;
-      width: 2px;
-      right: 27%;
-      .picture {
-        background-color: #fff2f3;
-        position: absolute;
-        height: 400px;
-        width: 400px;
-        top: 200px;
-        right: -200px;
-        z-index: 100;
-        object-fit: contain;
-        overflow: hidden;
-        img {
-          // max-height: 100%;
-          height: 100%;
-        }
-      }
-      .bottomShadow {
-        background-color: rgba(240, 101, 105, 1);
-        opacity: 0.5;
-        position: absolute;
-        top: 230px;
-        right: -230px;
-        height: 400px;
-        width: 400px;
-        // z-index: -1;
-      }
-
-      .circleBottom {
-        background-color: rgba(240, 101, 105, 1);
-        height: 15px;
-        width: 15px;
-        right: -7px;
-        position: absolute;
-        bottom: 0;
-        border-radius: 50%;
-      }
-      .circleTop {
-        background-color: rgba(255, 193, 127, 1);
-        height: 15px;
-        width: 15px;
-        position: absolute;
-        border-radius: 50%;
-        top: 0;
-        right: -7px;
-      }
-    }
-  }
+}
+.perProject {
+  background-color: #111517;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: row;
 }

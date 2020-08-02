@@ -1,0 +1,79 @@
+.leftSide {
+  margin-top: 7%;
+  // background-color: red;
+  // position: sticky;
+  width: 50%;
+  .workCount {
+    // margin-top: 7%;
+    color: #fff2f3;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+
+  .middleContainer {
+    // position: sticky;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    // position: absolute;
+    color: #fff2f3;
+    margin-left: 30%;
+    align-items: center;
+    width: 35%;
+    .textContainer {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      padding-top: 15px;
+      .number {
+        font-size: 160px;
+      }
+      .titleDescription {
+        padding-left: 15px;
+        .techStack {
+          font-style: italic;
+        }
+        .title {
+          font-size: 80px;
+        }
+      }
+    }
+    .button {
+      margin-left: 10%;
+      margin-top: 25px;
+      width: 300px;
+      border: 3px solid;
+      border-image-slice: 1;
+      border-radius: 40px;
+      border-radius: 15px;
+      background: none;
+      border-image-source: linear-gradient(
+        to right,
+        rgba(255, 193, 127, 1) 0%,
+        rgba(240, 101, 105, 1) 100%
+      );
+      padding: 20px;
+      color: #fff2f3;
+      text-align: center;
+      justify-content: center;
+    }
+    .button:hover {
+      color: #111517 !important;
+      background: linear-gradient(
+        to right,
+        rgba(255, 193, 127, 1) 0%,
+        rgba(240, 101, 105, 1) 100%
+      );
+      border-color: linear-gradient(
+        to right,
+        rgba(255, 193, 127, 1) 0%,
+        rgba(240, 101, 105, 1) 100%
+      ) !important;
+      text-decoration: none;
+
+      // font-style: normal !important;
+      transition: all 0.4s ease 0s;
+    }
+  }
+}
