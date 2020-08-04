@@ -6,6 +6,8 @@ export function ProjectPicture({ ListOfDetails }) {
       <div className={styles.vl}>
         <div className={styles.circleTop}> </div>
         <div className={styles.picture}>
+          {/* @TODO: no... not this. if you are using backgroundImage, don't use <img/>
+        what suppose be?< */}
           <img
             src={ListOfDetails.Picture}
             style={{

@@ -1,26 +1,22 @@
 .pictureContainer {
-  background-color: blue;
   // margin-top: -5%;
+  margin-left: 400px;
+  margin-bottom: 70px;
   .vl {
-    // top: 0;
-    top: 5%;
-    // top: -35px;
-    position: absolute;
+    position: relative;
     background: linear-gradient(
       to bottom,
       rgb(83, 63, 42) 0%,
       rgba(240, 101, 105, 1) 100%
     );
-
     height: 85vh;
     width: 2px;
-    right: 27%;
     .picture {
       background-color: #fff2f3;
       position: absolute;
       height: 400px;
       width: 400px;
-      top: 200px;
+      top: 230px;
       right: -200px;
       z-index: 100;
       object-fit: contain;
@@ -34,7 +30,7 @@
       background-color: rgba(240, 101, 105, 1);
       opacity: 0.5;
       position: absolute;
-      top: 230px;
+      top: 260px;
       right: -230px;
       height: 400px;
       width: 400px;
