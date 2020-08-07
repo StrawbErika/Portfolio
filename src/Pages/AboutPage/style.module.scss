@@ -23,7 +23,11 @@
     }
   }
   .content {
+    margin-top: -100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     // flex-direction: column;
 
     color: #f06569;
@@ -41,11 +45,23 @@
       }
     }
     .secondColumn {
+      padding-left: 100px;
+
       width: 50%;
       .title {
         font-size: 50px;
         .list {
+          margin-top: -40px;
+
           font-size: 25px;
+          p {
+            margin-top: -10px;
+          }
+          .subtitle {
+            margin-top: -25px;
+            font-size: 20px;
+            font-style: italic;
+          }
         }
       }
     }
