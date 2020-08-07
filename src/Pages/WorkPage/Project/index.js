@@ -1,38 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./style.module.scss";
 import { ProjectText } from "../../../Components/ProjectText";
 import { ProjectPicture } from "../../../Components/ProjectPicture";
+import { InView } from "react-intersection-observer";
+
 export function Project({ ListOfDetails }) {
-  let nameDisplayDiv = document.getElementById("works");
-  let containerDiv = document.getElementById("container");
-
-  function refresh() {
-    let scrollTop = containerDiv.scrollTop + containerDiv.clientHeight / 2;
-    let height = 0;
-    for (let child of containerDiv.children) {
-      let top = height;
-      let bottom = (height += child.clientHeight);
-      if (top < scrollTop && bottom > scrollTop) {
-        nameDisplayDiv.innerHTML = "bleu";
-        break;
-      }
-    }
+  const [textCount, setTextCount] = useState(0);
+  function handleScrollChange(count) {
+    console.log("CURRENT TEXTCOUNT: ", textCount);
+    console.log("INCOMING COUNT: ", count);
+    setTextCount(count);
   }
-
-  // containerDiv.onscroll = refresh;
-
-  // refresh();
-
   return (
     <div className={styles.project}>
-      <div className={styles.perProject} id="works">
-        <ProjectText ListOfDetails={ListOfDetails[0]} />
+      <div className={styles.perProject}>
+        <ProjectText ListOfDetails={ListOfDetails[textCount]} />
 
-        {/* @TODO: make this CSS modules for consistency */}
         <div id="container" className="projectPicsContainer">
-          <ProjectPicture ListOfDetails={ListOfDetails[0]} />
-          <ProjectPicture ListOfDetails={ListOfDetails[1]} />
-          <ProjectPicture ListOfDetails={ListOfDetails[2]} />
+          <InView as="div" onChange={() => handleScrollChange(0)}>
+            <ProjectPicture ListOfDetails={ListOfDetails[0]} />
+          </InView>
+
+          <InView as="div" onChange={() => handleScrollChange(1)}>
+            <ProjectPicture ListOfDetails={ListOfDetails[1]} />
+          </InView>
+          <InView as="div" onChange={() => handleScrollChange(2)}>
+            <ProjectPicture ListOfDetails={ListOfDetails[2]} />
+          </InView>
           {/* <ProjectPicture ListOfDetails={ListOfDetails[3]} /> */}
         </div>
       </div>

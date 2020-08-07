@@ -8,7 +8,7 @@ function App() {
     <div className={styles.app}>
       <WelcomePage />
       <WorkPage />
-      {/* <AboutPage /> */}
+      <AboutPage />
     </div>
   );
 }

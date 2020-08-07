@@ -7,21 +7,12 @@ export function MouseScroll() {
   //   let Link = Scroll.Link;
 
   return (
-    <div>
-      {/* <Link
-        activeClass="active"
-        to="#works"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-      > */}
+    <div className={styles.container}>
       <div className={styles.mouseScroll}>
         <a href="#works">
           <span></span>
         </a>
       </div>
-      {/* </Link> */}
     </div>
   );
 }

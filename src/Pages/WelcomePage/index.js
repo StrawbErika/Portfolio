@@ -20,9 +20,8 @@ export function WelcomePage() {
             <hr></hr>
             <p> ARTIST && DEVELOPER </p>
           </div>
-          {/* <div className={styles.darkerHalf}></div> */}
-          <MouseScroll />
         </div>
+        <MouseScroll />
       </div>
       <div className={styles.arrowDown}></div>
     </div>

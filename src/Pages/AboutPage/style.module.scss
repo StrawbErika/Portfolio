@@ -1,5 +1,53 @@
 .about {
-  height: 95vh;
-  padding-top: 5%;
+  height: 100vh;
+  padding-top: 10%;
   background-color: #fff2f3;
+  padding-left: 10%;
+  .title {
+    top: 200px;
+    // display: flex;
+    // flex-direction: column;
+    // margin-left: 10%;
+    color: #f06569;
+    font-size: 25px;
+    .hr {
+      width: 200px;
+      margin-top: -15px;
+      hr {
+        background: #f06569;
+        height: 3px;
+        border-color: #f06569;
+        border-radius: 10px;
+        border-style: solid;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    // flex-direction: column;
+
+    color: #f06569;
+    .firstColumn {
+      width: 50%;
+      .introduction {
+        .title {
+          font-size: 85px;
+        }
+        .description {
+          margin-top: -60px;
+          font-size: 30px;
+          // line-height: 90%;
+        }
+      }
+    }
+    .secondColumn {
+      width: 50%;
+      .title {
+        font-size: 50px;
+        .list {
+          font-size: 25px;
+        }
+      }
+    }
+  }
 }
