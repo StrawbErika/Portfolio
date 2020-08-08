@@ -1,0 +1,120 @@
+.contact {
+  $color1: #111517;
+  $color3: #ffc17f;
+
+  //   background-color: #f06569;
+  background-color: $color1;
+  color: $color3;
+  display: flex;
+  //   justify-content: center;
+  align-items: center;
+  //   background: linear-gradient(
+  //     to bottom,
+  //     rgba(255, 193, 127, 1) 0%,
+  //     rgba(240, 101, 105, 1) 100%
+  //   );
+  // background-color: #ffc17f;
+  height: 250px;
+  margin-bottom: 50px;
+  padding-left: 10%;
+  .title {
+    font-size: 50px;
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .hr {
+      width: 200px;
+      margin-top: -15px;
+      hr {
+        background: $color3;
+        height: 3px;
+        border-color: $color3;
+        border-radius: 10px;
+        border-style: solid;
+      }
+    }
+    .iconContainer {
+      margin-top: 50px;
+      display: flex;
+      .icon {
+        margin-right: 20px;
+        font-size: 55px;
+        color: $color3;
+      }
+    }
+  }
+  .email {
+    margin-left: 25%;
+
+    // background-color: $color3;
+    width: 350px;
+    // height: 50px;
+    // border-radius: 50px;
+
+    .contactButton {
+      position: relative;
+      -webkit-perspective: 1000;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      color: $color3;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 1.2em;
+      border: 5px solid $color3;
+      border-radius: 4px;
+      padding: 20px 60px 20px 55px;
+      transition: 0.3s ease-in-out;
+
+      span {
+        text-transform: none;
+        position: absolute;
+        color: $color1;
+        top: 20px;
+        left: 30px;
+        opacity: 0;
+        transition: all 0s ease 0s;
+      }
+      &:hover {
+        transition: 0.3s ease-in-out;
+        border: 2px solid $color3;
+        border-radius: 50px;
+        background-color: $color3;
+
+        & > span {
+          opacity: 1;
+          transition: all 0.25s ease-in-out 0.1s;
+        }
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: -12px;
+        width: 132px;
+        height: 25px;
+      }
+    }
+  }
+  .resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 25%;
+    font-size: 130px;
+    .outline {
+      margin-bottom: 0px;
+    }
+    p {
+      // margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 20px;
+    }
+  }
+}
