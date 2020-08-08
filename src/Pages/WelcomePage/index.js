@@ -1,17 +1,20 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { MouseScroll } from "./../../Components/MouseScroll";
-import { yieldExpression } from "@babel/types";
 
 export function WelcomePage() {
   return (
     <div className={styles.page}>
       <div className={styles.pageContent}>
         <div className={styles.navBar}>
-          <p> WORK</p>
+          <a href="#works">
+            <span>WORK</span>
+          </a>
+
+          <a href="#about">ABOUT</a>
+          <a href="#contract">CONTACT</a>
+
           {/* <p> ART</p> */}
-          <p> ABOUT</p>
-          <p> CONTACT</p>
         </div>
 
         <div className={styles.welcome}>

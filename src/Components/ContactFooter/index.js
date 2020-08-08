@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
+import resume from "./../../Assets/Nepomuceno.pdf";
 import {
   AiFillInstagram,
   AiFillGithub,
@@ -39,12 +40,16 @@ export function ContactFooter() {
           Contact me
           <span>erika.nepomuceno392@gmail.com</span>
         </a>
-        {/* <div className={styles.contactButton}></div> */}
+        {/* <div className={styles.contactButton}>
+          <a href="mailto: erika.nepomuceno392@gmail.com">Contact me</a>
+          <span>erika.nepomuceno392@gmail.com</span>
+        </div> */}
       </div>
       <div className={styles.resume}>
-        <AiFillFile className={styles.fill} />
+        <a href={resume} download="Nepomuceno.pdf">
+          <AiFillFile className={styles.fill} />
+        </a>
         <p>Nepomuceno.pdf</p>
-        {/* <AiOutlineFile className={styles.outline} /> */}
       </div>
     </div>
   );
