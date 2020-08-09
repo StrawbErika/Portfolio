@@ -12,7 +12,7 @@ export function Project({ ListOfDetails }) {
 
   function detectImage() {
     const halfImage = imageRef0.current.getBoundingClientRect().height / 2;
-    const half = window.innerHeight / 2 + halfImage; // @TODO: nevermind
+    const half = window.innerHeight / 2 + halfImage;
     const ref0Top = imageRef0.current.getBoundingClientRect().top;
     const ref1Top = imageRef1.current.getBoundingClientRect().top;
     const ref2Top = imageRef2.current.getBoundingClientRect().top;
@@ -30,12 +30,8 @@ export function Project({ ListOfDetails }) {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScrollChange);
-
-    function handleScrollChange(count) {
+    function handleScrollChange() {
       detectImage();
-      // console.log("CURRENT TEXTCOUNT: ", textCount);
-      // console.log("INCOMING COUNT: ", count);
-      // setTextCount(count);
     }
     return () => {
       document.removeEventListener("scroll", handleScrollChange);
