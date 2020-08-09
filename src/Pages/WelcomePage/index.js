@@ -12,7 +12,7 @@ export function WelcomePage() {
           </a>
 
           <a href="#about">ABOUT</a>
-          <a href="#contract">CONTACT</a>
+          <a href="#contact">CONTACT</a>
 
           {/* <p> ART</p> */}
         </div>

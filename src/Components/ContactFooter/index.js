@@ -5,14 +5,12 @@ import {
   AiFillInstagram,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillFile,
-  AiOutlineFile
+  AiFillFile
 } from "react-icons/ai";
-import { FaFileDownload } from "react-icons/fa";
 
 export function ContactFooter() {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <div className={styles.title}>
         <p>Say hi!</p>
         <div className={styles.hr}>

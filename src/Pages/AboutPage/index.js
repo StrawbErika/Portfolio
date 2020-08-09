@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 
 export function AboutPage() {
   return (
-    <div className={styles.about} id="works">
+    <div className={styles.about} id="about">
       <div className={styles.title}>
         <p>ABOUT</p>
         <div className={styles.hr}>
