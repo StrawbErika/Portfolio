@@ -31,13 +31,11 @@ export function ContactFooter() {
           </div>
         </div>
       </div>
-      <div className={styles.email}>
+      <a href="mailto: erika.nepomuceno392@gmail.com">
         <div className={styles.contactButton}>
-          <a href="mailto: erika.nepomuceno392@gmail.com">
-            <span>Contact me</span>
-          </a>
+          <span>Contact me</span>
         </div>
-      </div>
+      </a>
       <div className={styles.resume}>
         <a href={resume} download="Nepomuceno.pdf">
           <AiFillFile className={styles.fill} />
