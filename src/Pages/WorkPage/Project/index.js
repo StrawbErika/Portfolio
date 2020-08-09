@@ -1,74 +1,71 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.scss";
 import { ProjectText } from "../../../Components/ProjectText";
 import { ProjectPicture } from "../../../Components/ProjectPicture";
-import { InView } from "react-intersection-observer";
 
 export function Project({ ListOfDetails }) {
   const [textCount, setTextCount] = useState(0);
-  function handleScrollChange(count) {
-    console.log("CURRENT TEXTCOUNT: ", textCount);
-    console.log("INCOMING COUNT: ", count);
-    setTextCount(count);
+
+  const imageRef0 = useRef(null);
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+
+  function detectImage() {
+    const halfImage = imageRef0.current.getBoundingClientRect().height / 2;
+    const half = window.innerHeight / 2 + halfImage; // @TODO: nevermind
+    const ref0Top = imageRef0.current.getBoundingClientRect().top;
+    const ref1Top = imageRef1.current.getBoundingClientRect().top;
+    const ref2Top = imageRef2.current.getBoundingClientRect().top;
+    const top = 0;
+    if (top < ref0Top && ref0Top < half) {
+      setTextCount(0);
+    }
+    if (top < ref1Top && ref1Top < half) {
+      setTextCount(1);
+    }
+    if (top < ref2Top && ref2Top < half) {
+      setTextCount(2);
+    }
   }
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScrollChange);
+
+    function handleScrollChange(count) {
+      detectImage();
+      // console.log("CURRENT TEXTCOUNT: ", textCount);
+      // console.log("INCOMING COUNT: ", count);
+      // setTextCount(count);
+    }
+    return () => {
+      document.removeEventListener("scroll", handleScrollChange);
+    };
+  }, [textCount]);
+
   return (
     <div className={styles.project}>
       <div className={styles.perProject}>
         <ProjectText ListOfDetails={ListOfDetails[textCount]} />
 
         <div id="container" className="projectPicsContainer">
-          <InView as="div" onChange={() => handleScrollChange(0)}>
-            <ProjectPicture ListOfDetails={ListOfDetails[0]} />
-          </InView>
+          {/* do they have separate refs or only 1? */}
+          <ProjectPicture
+            ListOfDetails={ListOfDetails[0]}
+            ImageRef={imageRef0}
+          />
 
-          <InView as="div" onChange={() => handleScrollChange(1)}>
-            <ProjectPicture ListOfDetails={ListOfDetails[1]} />
-          </InView>
-          <InView as="div" onChange={() => handleScrollChange(2)}>
-            <ProjectPicture ListOfDetails={ListOfDetails[2]} />
-          </InView>
+          <ProjectPicture
+            ListOfDetails={ListOfDetails[1]}
+            ImageRef={imageRef1}
+          />
+          <ProjectPicture
+            ListOfDetails={ListOfDetails[2]}
+            ImageRef={imageRef2}
+          />
           {/* <ProjectPicture ListOfDetails={ListOfDetails[3]} /> */}
         </div>
       </div>
     </div>
   );
 }
-
-// your layout should be like this, not just visually but also how it's laid out in html
-
-/*
-    div    div
-  +------+------+
-  \      \ PIC  \
-  \ TEXT \      \
-  \      \ PIC  \
-  \      \      \
-  \      \ PIC  \
-  \      \      \
-  \      \ PIC  \
-  \      \      \  
-  +------+------+
-*/
-
-// for comparison, here's what it looks like right now
-
-/*
-     div    div
-  +------+------+
-  \      \      \
-  \ TEXT \ PIC  \
-  \      \      \
-  \------\------\
-  \      \      \
-  \ TEXT \ PIC  \
-  \      \      \
-  \------\------\
-  \      \      \
-  \ TEXT \ PIC  \
-  \      \      \
-  \------\------\
-  \      \      \
-  \ TEXT \ PIC  \
-  \      \      \
-  +------+------+
-*/
+// hello!

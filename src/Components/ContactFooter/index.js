@@ -32,18 +32,11 @@ export function ContactFooter() {
         </div>
       </div>
       <div className={styles.email}>
-        <a
-          href="mailto: erika.nepomuceno392@gmail.com"
-          target="_blank"
-          className={styles.contactButton}
-        >
-          Contact me
-          <span>erika.nepomuceno392@gmail.com</span>
-        </a>
-        {/* <div className={styles.contactButton}>
-          <a href="mailto: erika.nepomuceno392@gmail.com">Contact me</a>
-          <span>erika.nepomuceno392@gmail.com</span>
-        </div> */}
+        <div className={styles.contactButton}>
+          <a href="mailto: erika.nepomuceno392@gmail.com">
+            <span>Contact me</span>
+          </a>
+        </div>
       </div>
       <div className={styles.resume}>
         <a href={resume} download="Nepomuceno.pdf">
