@@ -1,22 +1,17 @@
 .project {
-  position: relative;
-  // padding-top: 4%;
-  // height: calc(95vh - 100px);
-  // padding-top: calc(10% - 35px);
-  // height: 95%;
-}
-.perProject {
-  background-color: #111517;
-  // padding-bottom: 2%;
-  display: flex;
-  flex-direction: row;
-  padding-top: 5%;
-}
-.projectPicsContainer {
-  padding-top: 1000px;
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  .perProject {
+    background-color: #111517;
+    // padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    .projectPicsContainer {
+      padding-top: 1000px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+  }
 }

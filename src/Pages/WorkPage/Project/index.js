@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.scss";
 import { ProjectText } from "../../../Components/ProjectText";
 import { ProjectPicture } from "../../../Components/ProjectPicture";
-
 export function Project({ ListOfDetails }) {
   const [textCount, setTextCount] = useState(0);
 
@@ -42,14 +41,11 @@ export function Project({ ListOfDetails }) {
     <div className={styles.project}>
       <div className={styles.perProject} id="works">
         <ProjectText ListOfDetails={ListOfDetails[textCount]} />
-
         <div id="container" className="projectPicsContainer">
-          {/* do they have separate refs or only 1? */}
           <ProjectPicture
             ListOfDetails={ListOfDetails[0]}
             ImageRef={imageRef0}
           />
-
           <ProjectPicture
             ListOfDetails={ListOfDetails[1]}
             ImageRef={imageRef1}
@@ -58,7 +54,6 @@ export function Project({ ListOfDetails }) {
             ListOfDetails={ListOfDetails[2]}
             ImageRef={imageRef2}
           />
-          {/* <ProjectPicture ListOfDetails={ListOfDetails[3]} /> */}
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { MouseScroll } from "./../../Components/MouseScroll";
-
 export function WelcomePage() {
   return (
     <div className={styles.page}>
@@ -15,7 +14,9 @@ export function WelcomePage() {
         </div>
         <MouseScroll />
       </div>
-      <div className={styles.arrowDown}></div>
+      <div className={styles.arrowContainer}>
+        <div className={styles.arrowDown}></div>
+      </div>
     </div>
   );
 }
