@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./App.module.scss";
 import { WelcomePage } from "./Pages/WelcomePage";
 import { WorkPage } from "./Pages/WorkPage";
@@ -6,12 +6,18 @@ import { AboutPage } from "./Pages/AboutPage";
 import { ContactFooter } from "./Components/ContactFooter";
 import { NavBar } from "./Components/NavBar";
 function App() {
-  const navRef = useRef(null);
+  const [highlight, setHighlight] = useState(false);
+  const workRef = useRef(null);
 
   useEffect(() => {
     document.addEventListener("scroll", handleNavBarChange);
     function handleNavBarChange() {
-      // console.log(navRef.current);
+      const workRefTop = workRef.current.getBoundingClientRect().top;
+      if (workRefTop < 57) {
+        setHighlight(true);
+      } else {
+        setHighlight(false);
+      }
     }
     return () => {
       document.removeEventListener("scroll", handleNavBarChange);
@@ -19,9 +25,9 @@ function App() {
   }, []);
   return (
     <div className={styles.app}>
-      <NavBar NavRef={navRef} />
+      <NavBar HighlightNav={highlight} />
       <WelcomePage />
-      <WorkPage />
+      <WorkPage WorkRef={workRef} />
       <AboutPage />
       <ContactFooter />
     </div>

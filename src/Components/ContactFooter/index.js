@@ -18,14 +18,19 @@ export function ContactFooter() {
         </div>
         <div className={styles.iconContainer}>
           <div className={styles.icon}>
-            <AiFillInstagram />
-          </div>
-
-          <div className={styles.icon}>
-            <AiFillGithub />
+            <a href="https://github.com/StrawbErika">
+              <AiFillGithub />
+            </a>
           </div>
           <div className={styles.icon}>
-            <AiFillLinkedin />
+            <a href="https://www.linkedin.com/in/eanepomuceno-392/">
+              <AiFillLinkedin />
+            </a>
+          </div>
+          <div className={styles.icon}>
+            <a href="https://instagram.com/strawberika07">
+              <AiFillInstagram />
+            </a>
           </div>
         </div>
       </div>
@@ -35,10 +40,10 @@ export function ContactFooter() {
         </div>
       </a>
       <div className={styles.resume}>
-        <a href={resume} download="Nepomuceno.pdf">
+        <a href={resume} download="NepomucenoResume.pdf">
           <AiFillFile className={styles.fill} />
         </a>
-        <p>Nepomuceno.pdf</p>
+        <p>NepomucenoResume.pdf</p>
       </div>
     </div>
   );

@@ -40,6 +40,17 @@ $color3: #ffc17f;
         margin-right: 20px;
         font-size: 55px;
         color: $color3;
+        transition: all 0.2s ease-in-out;
+        a {
+          margin-left: 0px;
+        }
+        a:link,
+        a:visited {
+          color: $color3;
+        }
+      }
+      .icon:hover {
+        transform: scale(1.2);
       }
     }
   }
@@ -62,7 +73,7 @@ $color3: #ffc17f;
     transition: all 0.4s ease 0s;
     border-radius: 50px;
     background-color: $color3;
-    color: #111517 !important;
+    color: $color1 !important;
     text-decoration: none;
   }
 
@@ -87,19 +98,24 @@ $color3: #ffc17f;
   align-items: center;
   flex-direction: column;
   padding-top: 10px;
-  margin-left: 25%;
+  margin-left: 20%;
   font-size: 130px;
 
   a,
   a:visited {
+    margin-left: 0px;
     color: $color3;
+    transition: all 0.2s ease-in-out;
   }
-  .outline {
+  .fill {
     color: $color3;
     margin-bottom: 0px;
   }
+  a:hover {
+    transform: scale(1.1);
+  }
   p {
-    margin-top: 0px;
+    margin-top: -10px;
     margin-bottom: 0px;
     font-size: 20px;
   }

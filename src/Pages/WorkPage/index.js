@@ -5,9 +5,9 @@ import project1 from "./../../Assets/Images/minkSquare.jpg";
 import project2 from "./../../Assets/Images/minkTol.jpg";
 import project3 from "./../../Assets/Images/minkWide.jpg";
 
-export function WorkPage() {
+export function WorkPage({ WorkRef }) {
   return (
-    <div className={styles.work}>
+    <div className={styles.work} ref={WorkRef}>
       <div>
         <Project
           ListOfDetails={[
@@ -52,8 +52,8 @@ export function WorkPage() {
             // }
           ]}
         />
+        {/* <div className={styles.arrowDown}></div> */}
       </div>
-      {/* <div className={styles.arrowDown}></div> */}
     </div>
   );
 }

@@ -4,16 +4,3 @@
   background-color: #111517;
   // z-index: 100000;
 }
-.arrowDown {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  // border-top: 40px solid#ff7d81;
-
-  border-top: 40px solid #111517;
-  left: calc(50vw - 40px);
-  // box-shadow: 0px 60px 42px 0px rgba(20, 14, 15, 0.35);
-  padding-top: 5%;
-}

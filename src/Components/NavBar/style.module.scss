@@ -1,21 +1,36 @@
 .navBar {
   position: fixed;
-  z-index: 100;
+  z-index: 10000;
   right: 0;
   min-height: 70px;
   color: #fff2f3;
   display: flex;
   align-items: center;
-  margin-right: 30px;
-  a {
-    font-size: 20px;
-    margin-left: 30px;
-    color: #fff2f3;
+  .linkContainer {
+    margin-right: 30px;
+
+    a {
+      font-size: 20px;
+      margin-left: 30px;
+      color: #fff2f3;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #111517;
+    }
   }
-  a:link {
-    text-decoration: none;
-  }
-  a:hover {
-    color: #111517;
+}
+
+.coloredNavBar {
+  width: 100%;
+  background-color: #111517;
+  display: flex;
+  justify-content: flex-end;
+  .linkContainer {
+    a:hover {
+      color: #ffc17f;
+    }
   }
 }
