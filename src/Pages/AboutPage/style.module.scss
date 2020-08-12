@@ -1,110 +1,148 @@
+$color1: #f06569;
+$color2: #fff2f3;
 .about {
   padding-top: 10%;
   padding-bottom: 10%;
-  background-color: #fff2f3;
+  background-color: $color2;
   padding-left: 10%;
   .title {
     top: 200px;
-    // display: flex;
-    // flex-direction: column;
-    // margin-left: 10%;
-    color: #f06569;
+    color: $color1;
     font-size: 25px;
     .hr {
       width: 200px;
       margin-top: -15px;
       hr {
-        background: #f06569;
+        background: $color1;
         height: 3px;
-        border-color: #f06569;
+        border-color: $color1;
         border-radius: 10px;
         border-style: solid;
       }
     }
   }
-  .content {
-    margin-top: -100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // flex-direction: column;
-
-    color: #f06569;
-    .firstColumn {
-      width: 50%;
-      .introduction {
-        .title {
-          font-size: 85px;
-          margin-bottom: 10px;
+  @media only screen and (max-width: 660px) {
+    .title {
+      top: 200px;
+      color: $color1;
+      font-size: 20px;
+      .hr {
+        width: 30%;
+        margin-top: -20px;
+        hr {
+          background: $color1;
+          height: 3px;
+          border-color: $color1;
+          border-radius: 10px;
+          border-style: solid;
         }
-        .description {
-          font-size: 30px;
-          // line-height: 90%;
-        }
-        @media only screen and (max-width: 990px) {
-          .title {
-            padding-top: 10px;
-            font-size: 55px;
-            margin-bottom: 5px;
-          }
-          .description {
-            font-size: 20px;
-          }
-        }
-        // @media only screen and (max-width: 800px) {
-        //   .title {
-        //     font-size: 45px;
-        //     margin-bottom: 5px;
-        //   }
-        //   .description {
-        //     font-size: 15px;
-        //   }
-        // }
       }
     }
-    .secondColumn {
-      padding-left: 100px;
-      padding-right: 100px;
+  }
+}
+.content {
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      width: 50%;
+  // flex-direction: column;
+
+  color: $color1;
+  .firstColumn {
+    width: 50%;
+    .introduction {
       .title {
-        font-size: 50px;
-        .list {
-          margin-top: -40px;
+        font-size: 85px;
+        margin-bottom: 10px;
+      }
+      .description {
+        font-size: 30px;
+        // line-height: 90%;
+      }
+      @media only screen and (max-width: 990px) {
+        .title {
+          padding-top: 10px;
+          font-size: 55px;
+          margin-bottom: 5px;
+        }
+        .description {
+          font-size: 20px;
+        }
+      }
+      @media only screen and (max-width: 660px) {
+        .title {
+          font-size: 45px;
+          margin-bottom: 5px;
+        }
+        .description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .secondColumn {
+    padding-left: 10%;
+    padding-right: 10%;
 
-          font-size: 25px;
+    width: 50%;
+    .title {
+      font-size: 50px;
+      .list {
+        margin-top: -40px;
+
+        font-size: 25px;
+        p {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+        .subtitle {
+          margin-bottom: 15px;
+
+          margin-top: 0px;
+          font-size: 20px;
+          font-style: italic;
+        }
+      }
+    }
+    @media only screen and (max-width: 990px) {
+      .title {
+        font-size: 40px;
+        .list {
+          margin-top: -30px;
+
+          font-size: 15px;
           p {
             margin-top: 0px;
             margin-bottom: 0px;
           }
           .subtitle {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
 
             margin-top: 0px;
-            font-size: 20px;
+            font-size: 15px;
             font-style: italic;
           }
         }
       }
-      @media only screen and (max-width: 990px) {
-        .title {
-          font-size: 40px;
-          .list {
-            margin-top: -30px;
+    }
+    @media only screen and (max-width: 660px) {
+      .title {
+        font-size: 30px;
+        .list {
+          margin-top: -20px;
 
+          font-size: 15px;
+          p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+          .subtitle {
+            margin-bottom: 10px;
+
+            margin-top: 0px;
             font-size: 15px;
-            p {
-              margin-top: 0px;
-              margin-bottom: 0px;
-            }
-            .subtitle {
-              margin-bottom: 10px;
-
-              margin-top: 0px;
-              font-size: 15px;
-              font-style: italic;
-            }
+            font-style: italic;
           }
         }
       }

@@ -29,8 +29,8 @@ function App() {
       {/* <NavBar HighlightNav={highlight} /> */}
       <WelcomePage />
       {/* <WorkPage WorkRef={workRef} /> */}
-      {/* <AboutPage />
-      <ContactFooter /> */}
+      <AboutPage />
+      <ContactFooter />
     </div>
   );
 }
