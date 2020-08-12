@@ -34,17 +34,21 @@ export function ContactFooter() {
           </div>
         </div>
       </div>
-      {/* <a href="mailto: erika.nepomuceno392@gmail.com">
-        <div className={styles.contactButton}>
-          <span>Contact me</span>
-        </div>
-      </a>
-      <div className={styles.resume}>
-        <a href={resume} download="NepomucenoResume.pdf">
-          <AiFillFile className={styles.fill} />
+      <div className={styles.buttonContainer}>
+        <a href="mailto: erika.nepomuceno392@gmail.com">
+          <div className={styles.contactButton}>
+            <span>Contact me</span>
+          </div>
         </a>
-        <p>NepomucenoResume.pdf</p>
-      </div> */}
+      </div>
+      <div className={styles.resumeContainer}>
+        <div className={styles.resume}>
+          <a href={resume} download="NepomucenoResume.pdf">
+            <AiFillFile className={styles.fill} />
+          </a>
+          <p>NepomucenoResume.pdf</p>
+        </div>
+      </div>
     </div>
   );
 }
