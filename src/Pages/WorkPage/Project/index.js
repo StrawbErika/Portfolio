@@ -40,6 +40,7 @@ export function Project({ ListOfDetails }) {
   return (
     <div className={styles.project}>
       <div className={styles.perProject} id="works">
+        {/* <ProjectText ListOfDetails={ListOfDetails[0]} /> */}
         <ProjectText ListOfDetails={ListOfDetails[textCount]} />
         <div id="container" className="projectPicsContainer">
           <ProjectPicture

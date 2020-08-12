@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { MouseScroll } from "./../../Components/MouseScroll";
+
 export function WelcomePage() {
   return (
     <div className={styles.page}>

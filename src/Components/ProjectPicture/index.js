@@ -7,10 +7,6 @@ export function ProjectPicture({ ListOfDetails, ImageRef }) {
       <div className={styles.vl}>
         <div className={styles.circleTop}> </div>
         <div className={styles.picture}>
-          {/* @TODO: no... not this. if you are using backgroundImage, don't use <img/>
-        what suppose be?< */}
-          {/* set props ref here sa img 
-        wait*/}
           <img
             src={ListOfDetails.Picture}
             style={{

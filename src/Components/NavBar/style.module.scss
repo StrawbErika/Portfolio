@@ -34,3 +34,20 @@
     }
   }
 }
+
+.hamburger {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  min-height: 70px;
+  color: #fff2f3;
+  display: flex;
+  align-items: center;
+  .linkContainer {
+    margin-right: 30px;
+    font-size: 30px;
+  }
+  .linkContainer:hover {
+    color: #111517;
+  }
+}

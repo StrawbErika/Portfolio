@@ -34,7 +34,7 @@ export function ContactFooter() {
           </div>
         </div>
       </div>
-      <a href="mailto: erika.nepomuceno392@gmail.com">
+      {/* <a href="mailto: erika.nepomuceno392@gmail.com">
         <div className={styles.contactButton}>
           <span>Contact me</span>
         </div>
@@ -44,7 +44,7 @@ export function ContactFooter() {
           <AiFillFile className={styles.fill} />
         </a>
         <p>NepomucenoResume.pdf</p>
-      </div>
+      </div> */}
     </div>
   );
 }
