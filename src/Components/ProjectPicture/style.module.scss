@@ -1,6 +1,4 @@
 .pictureContainer {
-  // margin-top: -5%;
-  margin-left: 400px;
   margin-bottom: 120px;
   .vl {
     position: relative;
@@ -11,18 +9,18 @@
     );
     height: 85vh;
     width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .picture {
-      background-color: #fff2f3;
       position: absolute;
+      background-color: #fff2f3;
       height: 400px;
       width: 400px;
-      top: 230px;
-      right: -200px;
       z-index: 100;
       object-fit: contain;
       overflow: hidden;
       img {
-        // max-height: 100%;
         height: 100%;
       }
     }

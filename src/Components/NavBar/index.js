@@ -7,15 +7,12 @@ export function NavBar({ HighlightNav }) {
   const { width } = useWindowSize();
   function openHamburger() {
     console.log("blegh");
-    // return <div className={style.}>
-
-    // </div>;
   }
   if (width < 1380)
     return (
       <div
         className={`${styles.hamburger} ${
-          HighlightNav ? styles.coloredNavBar : ""
+          HighlightNav ? styles.coloredHamburger : ""
         }`}
       >
         <div className={styles.linkContainer}>

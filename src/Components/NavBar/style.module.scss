@@ -25,6 +25,7 @@
 
 .coloredNavBar {
   width: 100%;
+  // background-color: blue;
   background-color: #111517;
   display: flex;
   justify-content: flex-end;
@@ -49,5 +50,16 @@
   }
   .linkContainer:hover {
     color: #111517;
+  }
+}
+.coloredHamburger {
+  width: 100%;
+  background-color: #111517;
+  display: flex;
+  justify-content: flex-end;
+  .linkContainer {
+    a:hover {
+      color: #ffc17f;
+    }
   }
 }

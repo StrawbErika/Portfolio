@@ -16,7 +16,7 @@ export function ProjectPicture({ ListOfDetails, ImageRef }) {
             alt="Logo"
           />
         </div>
-        <div className={styles.bottomShadow}></div>
+        {/* <div className={styles.bottomShadow}></div> */}
         <div className={styles.circleBottom}></div>
       </div>
     </div>
