@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.scss";
 import { ProjectText } from "../../../Components/ProjectText";
 import { ProjectPicture } from "../../../Components/ProjectPicture";
+
 export function Project({ ListOfDetails }) {
   const [textCount, setTextCount] = useState(0);
 
@@ -36,11 +37,9 @@ export function Project({ ListOfDetails }) {
       document.removeEventListener("scroll", handleScrollChange);
     };
   }, [textCount]);
-
   return (
     <div className={styles.project}>
       <div className={styles.perProject} id="works">
-        {/* <ProjectText ListOfDetails={ListOfDetails[0]} /> */}
         <ProjectText ListOfDetails={ListOfDetails[textCount]} />
         <div id="container" className={styles.projectPicsContainer}>
           <ProjectPicture

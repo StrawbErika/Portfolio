@@ -48,13 +48,18 @@ $color2: #fff2f3;
       .description {
         font-size: 30px;
       }
+      @media only screen and (max-width: 1400px) {
+        .title {
+          font-size: 65px;
+        }
+        .description {
+          font-size: 20px;
+        }
+      }
       @media only screen and (max-width: 990px) {
         .title {
           padding-top: 10px;
           font-size: 55px;
-        }
-        .description {
-          font-size: 20px;
         }
       }
       @media only screen and (max-width: 660px) {

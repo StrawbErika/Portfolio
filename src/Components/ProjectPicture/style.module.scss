@@ -55,3 +55,14 @@
     }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .pictureContainer {
+    margin-top: 10%;
+    .vl {
+      .picture {
+        height: 350px;
+        width: 350px;
+      }
+    }
+  }
+}
