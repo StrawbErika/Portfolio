@@ -27,7 +27,7 @@ export function Mobile({ ListOfDetails }) {
                 <p className={styles.subtitle}> {ListOfDetails.Subtitle} </p>
               ) : null}
               <p className={styles.techStack}>{ListOfDetails.TechStack}</p>
-              <p>{ListOfDetails.Description}</p>
+              <p className={styles.description}>{ListOfDetails.Description}</p>
             </div>
           </div>
           <a href={ListOfDetails.Repository}>

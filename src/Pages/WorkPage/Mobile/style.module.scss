@@ -1,8 +1,8 @@
 $color1: #fff2f3;
 
 .mobileContainer {
-  padding-top: 5%;
-  padding-bottom: 25%;
+  padding-top: 10%;
+  padding-bottom: 40%;
   .workCount {
     color: $color1;
     font-size: 25px;
@@ -27,6 +27,7 @@ $color1: #fff2f3;
       }
       margin-bottom: 5%;
     }
+
     .middleContainer {
       padding-left: 10%;
       padding-right: 10%;
@@ -49,7 +50,7 @@ $color1: #fff2f3;
           font-size: 130px;
         }
         .titleDesc {
-          padding-left: 0px;
+          padding-left: 10px;
           .title {
             font-size: 50px;
           }
@@ -64,13 +65,39 @@ $color1: #fff2f3;
           }
         }
       }
+      @media only screen and (max-width: 550px) {
+        .textContainer {
+          .number {
+            font-size: 80px;
+          }
+          .titleDesc {
+            .title {
+              font-size: 38px;
+            }
+            .subtitle {
+              margin-top: -5px;
+              font-size: 25px;
+            }
+            .description {
+              font-size: 15px;
+            }
+            .techStack {
+              white-space: normal;
+            }
+          }
+        }
+
+        .button {
+          padding: 15px;
+        }
+      }
       a:link {
         text-decoration: none;
+        width: 100%;
       }
 
       .button {
         margin-top: 15px;
-        width: 300px;
         border: 3px solid;
         border-image-slice: 1;
         border-radius: 40px;
@@ -100,6 +127,12 @@ $color1: #fff2f3;
         ) !important;
         text-decoration: none;
         transition: all 0.4s ease 0s;
+      }
+    }
+    @media only screen and (max-width: 380px) {
+      .middleContainer {
+        padding-left: 5%;
+        padding-right: 5%;
       }
     }
   }

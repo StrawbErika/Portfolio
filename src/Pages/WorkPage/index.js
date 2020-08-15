@@ -56,6 +56,8 @@ export function WorkPage({ WorkRef }) {
       <div className={styles.work} ref={WorkRef} id="works">
         {" "}
         <Mobile ListOfDetails={Details[0]} />
+        <Mobile ListOfDetails={Details[1]} />
+        <Mobile ListOfDetails={Details[2]} />
       </div>
     );
   else
