@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.scss";
 import { Mobile } from "./Mobile";
 import { Project } from "./Project";
+import { ProgressBar } from "./../../Components/ProgressBar";
+import { useWindowSize } from "react-use";
 import project1 from "./../../Assets/Images/minkSquare.jpg";
 import project2 from "./../../Assets/Images/minkTol.jpg";
 import project3 from "./../../Assets/Images/minkWide.jpg";
-import { useWindowSize } from "react-use";
 
 export function WorkPage({ WorkRef }) {
   const { width } = useWindowSize();
-
+  const Percent = ["33.3333333333%", "66.6666666666%", "100%"];
   const Details = [
     {
       Title: "SINING",
@@ -51,13 +52,57 @@ export function WorkPage({ WorkRef }) {
     //   Picture: project1
     // }
   ];
+
+  const [percent, setPercent] = useState(0);
+  const workCount = useRef(null);
+  const buttonRef0 = useRef(null);
+  const buttonRef1 = useRef(null);
+  const buttonRef2 = useRef(null);
+
+  function detectImage() {
+    // const halfImage = / 2;
+    // const half = window.innerHeight / 2 + halfImage;
+    const top = workCount.current.getBoundingClientRect().bottom;
+    const ref0Top = buttonRef0.current.getBoundingClientRect().bottom;
+    const ref1Top = buttonRef1.current.getBoundingClientRect().bottom;
+    const ref2Top = buttonRef2.current.getBoundingClientRect().bottom;
+    const bottom = window.innerHeight;
+
+    if (top < ref0Top && ref0Top < bottom) {
+      setPercent(0);
+    }
+    if (top < ref1Top && ref1Top < bottom) {
+      setPercent(1);
+    }
+    if (top < ref2Top && ref2Top < bottom) {
+      setPercent(2);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScrollChange);
+    function handleScrollChange() {
+      if (workCount.current !== null) {
+        detectImage();
+      }
+    }
+    return () => {
+      document.removeEventListener("scroll", handleScrollChange);
+    };
+  }, [percent]);
   if (width < 950)
     return (
       <div className={styles.work} ref={WorkRef} id="works">
-        {" "}
-        <Mobile ListOfDetails={Details[0]} />
-        <Mobile ListOfDetails={Details[1]} />
-        <Mobile ListOfDetails={Details[2]} />
+        <div className={styles.workCount} ref={workCount}>
+          <p> WORK </p>
+          <div className={styles.progressBar}>
+            <ProgressBar length={Percent[percent]} />
+          </div>
+        </div>
+
+        <Mobile ListOfDetails={Details[0]} ButtonRef={buttonRef0} />
+        <Mobile ListOfDetails={Details[1]} ButtonRef={buttonRef1} />
+        <Mobile ListOfDetails={Details[2]} ButtonRef={buttonRef2} />
       </div>
     );
   else

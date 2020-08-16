@@ -1,13 +1,8 @@
 import React from "react";
 import styles from "./style.module.scss";
-import { ProgressBar } from "./../../../Components/ProgressBar";
-export function Mobile({ ListOfDetails }) {
+export function Mobile({ ListOfDetails, ButtonRef }) {
   return (
     <div className={styles.mobileContainer}>
-      <div className={styles.workCount}>
-        <p> WORK </p>
-        <ProgressBar length={ListOfDetails.Percent} />
-      </div>
       <div className={styles.content}>
         <div className={styles.pictureContainer}>
           <img
@@ -31,7 +26,9 @@ export function Mobile({ ListOfDetails }) {
             </div>
           </div>
           <a href={ListOfDetails.Repository}>
-            <div className={styles.button}>Visit the repository here!</div>
+            <div className={styles.button} ref={ButtonRef}>
+              Visit the repository here!
+            </div>
           </a>
         </div>
       </div>

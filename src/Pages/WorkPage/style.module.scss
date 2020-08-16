@@ -1,4 +1,22 @@
 .work {
   padding-top: 5%;
   background-color: #111517;
+  .workCount {
+    width: 100%;
+    background-color: #111517;
+    position: sticky;
+    top: 25px;
+    color: #fff2f3;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    z-index: 1000;
+    p {
+      margin-left: 10%;
+    }
+    .progressBar {
+      margin-left: 10%;
+    }
+  }
 }
