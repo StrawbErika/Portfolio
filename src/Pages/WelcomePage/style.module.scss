@@ -1,3 +1,4 @@
+$color1: #fff2f3;
 .page {
   padding-bottom: 5%;
   .pageContent {
@@ -18,10 +19,10 @@
       padding-bottom: 15%;
 
       text-align: center;
-      color: #fff2f3;
+      color: $color1;
 
       .name {
-        color: #fff2f3;
+        color: $color1;
         z-index: 1000;
         .title {
           font-size: 50px;
@@ -30,13 +31,13 @@
         }
         hr {
           width: 100px;
-          background: #fff2f3;
+          background: $color1;
           height: 3px;
           border-radius: 10px;
           border-style: solid;
         }
         p {
-          color: #fff2f3;
+          color: $color1;
           font-size: 20px;
         }
         @media only screen and (max-width: 800px) {

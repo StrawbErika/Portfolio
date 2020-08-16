@@ -1,26 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./style.module.scss";
+import { SideBar } from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useWindowSize } from "react-use";
 
 export function NavBar({ HighlightNav }) {
-  const { width } = useWindowSize();
-  function openHamburger() {
-    console.log("blegh");
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeSideBar() {
+    setIsOpen(false);
   }
+  const { width } = useWindowSize();
   if (width < 1380)
     return (
       <div
         className={`${styles.hamburger} ${
-          HighlightNav ? styles.coloredHamburger : ""
+          HighlightNav && !isOpen ? styles.coloredHamburger : ""
         }`}
       >
         <div className={styles.linkContainer}>
           <GiHamburgerMenu
             onClick={() => {
-              openHamburger();
+              setIsOpen(true);
             }}
           />
+          <div>
+            {isOpen && <SideBar IsOpen={isOpen} IsClose={closeSideBar} />}
+          </div>
         </div>
       </div>
     );
