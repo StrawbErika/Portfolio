@@ -6,16 +6,20 @@ import { useWindowSize } from "react-use";
 
 export function NavBar({ HighlightNav }) {
   const [isOpen, setIsOpen] = useState(false);
-
   function closeSideBar() {
     setIsOpen(false);
   }
   const { width } = useWindowSize();
-  if (width < 1380)
+  if (width < 1300)
     return (
+      // <div
+      //   className={`${styles.hamburger} ${
+      //     HighlightNav && !isOpen ? styles.coloredHamburger : ""
+      //   }`}
+      // >
       <div
         className={`${styles.hamburger} ${
-          HighlightNav && !isOpen ? styles.coloredHamburger : ""
+          HighlightNav ? styles.coloredHamburger : ""
         }`}
       >
         <div className={styles.linkContainer}>
@@ -25,7 +29,8 @@ export function NavBar({ HighlightNav }) {
             }}
           />
           <div>
-            {isOpen && <SideBar IsOpen={isOpen} IsClose={closeSideBar} />}
+            {/* {isOpen && <SideBar IsOpen={isOpen} OnClose={closeSideBar} />} */}
+            <SideBar IsOpen={isOpen} OnClose={closeSideBar} />
           </div>
         </div>
       </div>

@@ -99,7 +99,6 @@ export function WorkPage({ WorkRef }) {
             <ProgressBar length={Percent[percent]} />
           </div>
         </div>
-
         <Mobile ListOfDetails={Details[0]} ButtonRef={buttonRef0} />
         <Mobile ListOfDetails={Details[1]} ButtonRef={buttonRef1} />
         <Mobile ListOfDetails={Details[2]} ButtonRef={buttonRef2} />
