@@ -12,11 +12,6 @@ export function NavBar({ HighlightNav }) {
   const { width } = useWindowSize();
   if (width < 1300)
     return (
-      // <div
-      //   className={`${styles.hamburger} ${
-      //     HighlightNav && !isOpen ? styles.coloredHamburger : ""
-      //   }`}
-      // >
       <div
         className={`${styles.hamburger} ${
           HighlightNav ? styles.coloredHamburger : ""

@@ -10,7 +10,7 @@ export function WelcomePage() {
           <div className={styles.name}>
             <p className={styles.title}> ERIKA LOUISE NEPOMUCENO</p>
             <hr></hr>
-            <p> ARTIST && DEVELOPER </p>
+            <p> Artist && Developer </p>
           </div>
         </div>
         <MouseScroll />

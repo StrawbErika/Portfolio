@@ -5,16 +5,15 @@ export function SideBar({ IsOpen, OnClose }) {
   return (
     <div className={styles.sideBarContainer}>
       <div
-        // className={`${IsOpen}? ${styles.sideBar} : ${styles.sideBar} ${styles.sideBarClosed}`}
         className={
           IsOpen ? styles.sideBar : `${styles.sideBar} ${styles.sideBarClosed}`
         }
-        // className={styles.sideBar}
       >
         <div className={styles.closeButton}>
           <AiOutlineCloseCircle onClick={OnClose} />
         </div>
         <div className={styles.titleHr}>
+          <p> Artist && Developer</p>
           <hr></hr>
           <div className={styles.linkContainer}>
             <a href="#works" onClick={OnClose}>

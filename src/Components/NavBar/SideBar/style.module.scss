@@ -37,11 +37,19 @@ $color3: #ffc17f;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      p {
+        letter-spacing: 0.2rem;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
       hr {
         width: 300px;
         height: 1px;
         background-color: $color2;
-        opacity: 0.7;
+        border-radius: 10px;
+        border-style: solid;
+        // opacity: 0.7;
       }
       .linkContainer {
         padding: 20px 0 30px;
