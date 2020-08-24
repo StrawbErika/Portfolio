@@ -5,11 +5,23 @@ $color3: #ffc17f;
   position: fixed;
   z-index: 10000;
   right: 0;
+  width: 100%;
   min-height: 70px;
   color: $color1;
   display: flex;
   align-items: center;
+  .logoContainer {
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    img {
+      height: 100px;
+    }
+  }
   .linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     margin-right: 30px;
     a {
       font-size: 20px;
@@ -26,7 +38,6 @@ $color3: #ffc17f;
 }
 
 .coloredNavBar {
-  width: 100%;
   background-color: $color2;
   display: flex;
   justify-content: flex-end;
@@ -38,6 +49,7 @@ $color3: #ffc17f;
 }
 
 .hamburger {
+  width: 100%;
   position: fixed;
   z-index: 10000;
   right: 0;
@@ -45,7 +57,22 @@ $color3: #ffc17f;
   color: $color1;
   display: flex;
   align-items: center;
+  .logoContainer {
+    opacity: 0;
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    transition: all 0.2s ease-in-out;
+
+    img {
+      height: 100px;
+    }
+  }
+
   .linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     padding-right: 30px;
     font-size: 30px;
   }
@@ -54,10 +81,13 @@ $color3: #ffc17f;
   }
 }
 .coloredHamburger {
-  width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: $color2;
+  .logoContainer {
+    opacity: 1;
+  }
+
   .linkContainer:hover {
     color: $color3;
   }

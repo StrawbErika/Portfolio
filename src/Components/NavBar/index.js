@@ -3,6 +3,7 @@ import styles from "./style.module.scss";
 import { SideBar } from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useWindowSize } from "react-use";
+import whiteLogo from "./../../Assets/Images/whiteLogo.png";
 
 export function NavBar({ highlightNav }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,10 @@ export function NavBar({ highlightNav }) {
           highlightNav ? styles.coloredHamburger : ""
         }`}
       >
+        <div className={styles.logoContainer}>
+          <img src={whiteLogo} alt="logo" />
+        </div>
+
         <div className={styles.linkContainer}>
           <GiHamburgerMenu
             onClick={() => {
@@ -36,6 +41,9 @@ export function NavBar({ highlightNav }) {
           highlightNav ? styles.coloredNavBar : ""
         }`}
       >
+        <div className={styles.logoContainer}>
+          <img src={whiteLogo} alt="logo" />
+        </div>
         <div className={styles.linkContainer}>
           <a href="#works">
             <span>WORK</span>
