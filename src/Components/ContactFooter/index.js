@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./style.module.scss";
-import resume from "./../../Assets/Nepomuceno.pdf";
+import resume from "./../../Assets/NepomucenoResume.pdf";
 import {
   AiFillInstagram,
   AiFillGithub,

@@ -15,11 +15,10 @@ export function AboutPage() {
           <div className={styles.introduction}>
             <p className={styles.title}> Hi, I'm Erika!</p>
             <div className={styles.description}>
-              I'm a graduate of the University of the Philippines, Los Banos,
-              majoring in BS Computer Science. more abt me. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit. Morbi eget tempor lacus,
-              vel egestas mauris. Pellentesque id feugiat turpis. Vestibulum
-              euismod id mi id ultrices.
+              A passionate individual who highly values hard work and honesty. A
+              team player with strong communication skills, coming with a
+              Bachelor of Science degree in Computer Science from the University
+              of the Philippines, Los Banos.
             </div>
           </div>
         </div>

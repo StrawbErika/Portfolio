@@ -14,9 +14,10 @@
     align-items: center;
     .picture {
       position: absolute;
-      background-color: #fff2f3;
-      height: 400px;
-      width: 400px;
+      background-color: #111517;
+      display: flex;
+      justify-content: center;
+      align-content: center;
       z-index: 100;
       object-fit: contain;
       overflow: hidden;

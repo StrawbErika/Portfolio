@@ -1,5 +1,5 @@
 $color1: #fff2f3;
-
+$color2: #111517;
 .mobileContainer {
   padding-bottom: 40%;
   .content {
@@ -9,10 +9,13 @@ $color1: #fff2f3;
     flex-direction: column;
 
     .pictureContainer {
-      background-color: #fff2f3;
+      background-color: $color2;
       height: 300px;
       width: 300px;
       z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       object-fit: contain;
       overflow: hidden;
       img {
@@ -107,7 +110,7 @@ $color1: #fff2f3;
         justify-content: center;
       }
       .button:hover {
-        color: #111517 !important;
+        color: $color2 !important;
         background: linear-gradient(
           to right,
           rgba(255, 193, 127, 1) 0%,

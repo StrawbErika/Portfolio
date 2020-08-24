@@ -3,12 +3,13 @@ import styles from "./style.module.scss";
 import { ProjectText } from "../../../Components/ProjectText";
 import { ProjectPicture } from "../../../Components/ProjectPicture";
 
-export function Project({ ListOfDetails }) {
+export function Project({ listOfDetails }) {
   const [textCount, setTextCount] = useState(0);
 
   const imageRef0 = useRef(null);
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
+  const imageRef3 = useRef(null);
 
   function detectImage() {
     const halfImage = imageRef0.current.getBoundingClientRect().height / 2;
@@ -16,6 +17,7 @@ export function Project({ ListOfDetails }) {
     const ref0Top = imageRef0.current.getBoundingClientRect().top;
     const ref1Top = imageRef1.current.getBoundingClientRect().top;
     const ref2Top = imageRef2.current.getBoundingClientRect().top;
+    const ref3Top = imageRef3.current.getBoundingClientRect().top;
     const top = 0;
     if (top < ref0Top && ref0Top < half) {
       setTextCount(0);
@@ -25,6 +27,9 @@ export function Project({ ListOfDetails }) {
     }
     if (top < ref2Top && ref2Top < half) {
       setTextCount(2);
+    }
+    if (top < ref3Top && ref3Top < half) {
+      setTextCount(3);
     }
   }
 
@@ -40,19 +45,23 @@ export function Project({ ListOfDetails }) {
   return (
     <div className={styles.project}>
       <div className={styles.perProject} id="works">
-        <ProjectText ListOfDetails={ListOfDetails[textCount]} />
+        <ProjectText listOfDetails={listOfDetails[textCount]} />
         <div id="container" className={styles.projectPicsContainer}>
           <ProjectPicture
-            ListOfDetails={ListOfDetails[0]}
-            ImageRef={imageRef0}
+            listOfDetails={listOfDetails[0]}
+            imageRef={imageRef0}
           />
           <ProjectPicture
-            ListOfDetails={ListOfDetails[1]}
-            ImageRef={imageRef1}
+            listOfDetails={listOfDetails[1]}
+            imageRef={imageRef1}
           />
           <ProjectPicture
-            ListOfDetails={ListOfDetails[2]}
-            ImageRef={imageRef2}
+            listOfDetails={listOfDetails[2]}
+            imageRef={imageRef2}
+          />
+          <ProjectPicture
+            listOfDetails={listOfDetails[3]}
+            imageRef={imageRef3}
           />
         </div>
       </div>

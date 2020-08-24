@@ -25,9 +25,9 @@ function App() {
   }, []);
   return (
     <div className={styles.app}>
-      <NavBar HighlightNav={highlight} />
+      <NavBar highlightNav={highlight} />
       <WelcomePage />
-      <WorkPage WorkRef={workRef} />
+      <WorkPage workRef={workRef} />
       <AboutPage />
       <ContactFooter />
     </div>

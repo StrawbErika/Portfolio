@@ -4,7 +4,7 @@ import { SideBar } from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useWindowSize } from "react-use";
 
-export function NavBar({ HighlightNav }) {
+export function NavBar({ highlightNav }) {
   const [isOpen, setIsOpen] = useState(false);
   function closeSideBar() {
     setIsOpen(false);
@@ -14,7 +14,7 @@ export function NavBar({ HighlightNav }) {
     return (
       <div
         className={`${styles.hamburger} ${
-          HighlightNav ? styles.coloredHamburger : ""
+          highlightNav ? styles.coloredHamburger : ""
         }`}
       >
         <div className={styles.linkContainer}>
@@ -24,8 +24,7 @@ export function NavBar({ HighlightNav }) {
             }}
           />
           <div>
-            {/* {isOpen && <SideBar IsOpen={isOpen} OnClose={closeSideBar} />} */}
-            <SideBar IsOpen={isOpen} OnClose={closeSideBar} />
+            <SideBar isOpen={isOpen} onClose={closeSideBar} />
           </div>
         </div>
       </div>
@@ -34,7 +33,7 @@ export function NavBar({ HighlightNav }) {
     return (
       <div
         className={`${styles.navBar} ${
-          HighlightNav ? styles.coloredNavBar : ""
+          highlightNav ? styles.coloredNavBar : ""
         }`}
       >
         <div className={styles.linkContainer}>
