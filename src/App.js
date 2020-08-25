@@ -32,12 +32,14 @@ function App() {
         <meta charSet="utf-8" />
         <title>Erika Nepomuceno's Resume website </title>
         <meta
-          name="description"
+          property="og:description"
           content="Hi, I'm Erika!
           A passionate individual who highly values hard work and honesty. A team player with strong communication skills, coming with a Bachelor of Science degree in Computer Science from the University of the Philippines, Los Banos."
         />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content={welcome} />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
       </Helmet>
 
       <NavBar highlightNav={highlight} />
