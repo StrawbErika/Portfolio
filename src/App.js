@@ -43,6 +43,7 @@ function App() {
         <meta property="og:url" content="https://erikanepomuceno.netlify.app" />
         <meta property="og:image:width" content="1835" />
         <meta property="og:image:height" content="948" />
+        <meta property="twitter:image" content={welcome} />
       </Helmet>
 
       <NavBar highlightNav={highlight} />
