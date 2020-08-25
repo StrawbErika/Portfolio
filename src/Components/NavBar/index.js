@@ -49,12 +49,16 @@ export function NavBar({ highlightNav }) {
           </a>
         </div>
         <div className={styles.linkContainer}>
-          <a href="#works">
+          <a href="#works" className={styles.navItem}>
             <span>WORK</span>
           </a>
 
-          <a href="#about">ABOUT</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#about" className={styles.navItem}>
+            ABOUT
+          </a>
+          <a href="#contact" className={styles.navItem}>
+            CONTACT
+          </a>
         </div>
 
         {/* <p> ART</p> */}

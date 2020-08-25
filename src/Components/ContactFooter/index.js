@@ -13,7 +13,7 @@ import { useWindowSize } from "react-use";
 
 export function ContactFooter() {
   const { width } = useWindowSize();
-  if (width < 450) {
+  if (width < 800) {
     return (
       <div className={styles.contact} id="contact">
         <div className={styles.title}>

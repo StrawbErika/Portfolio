@@ -27,18 +27,18 @@ $color3: #ffc17f;
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
-    a {
-      font-size: 20px;
-      margin-left: 30px;
-      color: $color1;
-    }
-    a:link {
-      text-decoration: none;
-    }
-    a:hover {
-      color: $color2;
-    }
   }
+}
+.navItem {
+  font-size: 20px;
+  margin-left: 30px;
+  color: $color1;
+}
+.navItem:link {
+  text-decoration: none;
+}
+.navItem:hover {
+  color: $color2;
 }
 
 .coloredNavBar {

@@ -38,7 +38,6 @@ function App() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={welcome} />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://metatags.io/" />
       </Helmet>
 
