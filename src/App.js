@@ -31,6 +31,8 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Erika Nepomuceno's Resume website </title>
+        <meta property="og:title" content="Erika Nepomuceno's Resume website" />
+
         <meta
           property="og:description"
           content="Hi, I'm Erika!
@@ -38,7 +40,9 @@ function App() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={welcome} />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://erikanepomuceno.netlify.app" />
+        <meta property="og:image:width" content="1835" />
+        <meta property="og:image:height" content="948" />
       </Helmet>
 
       <NavBar highlightNav={highlight} />
