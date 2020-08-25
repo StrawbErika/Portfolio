@@ -4,7 +4,7 @@ import { MouseScroll } from "./../../Components/MouseScroll";
 
 export function WelcomePage() {
   return (
-    <div className={styles.page}>
+    <div className={styles.page} id="welcome">
       <div className={styles.pageContent}>
         <div className={styles.welcome}>
           <div className={styles.name}>

@@ -1,10 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./App.module.scss";
+import { Helmet } from "react-helmet";
+
 import { WelcomePage } from "./Pages/WelcomePage";
 import { WorkPage } from "./Pages/WorkPage";
 import { AboutPage } from "./Pages/AboutPage";
 import { ContactFooter } from "./Components/ContactFooter";
 import { NavBar } from "./Components/NavBar";
+import welcome from "./Assets/Images/welcome.png";
 function App() {
   const [highlight, setHighlight] = useState(false);
   const workRef = useRef(null);
@@ -25,6 +28,18 @@ function App() {
   }, []);
   return (
     <div className={styles.app}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Erika Nepomuceno's Resume website </title>
+        <meta
+          name="description"
+          content="Hi, I'm Erika!
+          A passionate individual who highly values hard work and honesty. A team player with strong communication skills, coming with a Bachelor of Science degree in Computer Science from the University of the Philippines, Los Banos."
+        />
+        <meta property="og:image" content={welcome} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <NavBar highlightNav={highlight} />
       <WelcomePage />
       <WorkPage workRef={workRef} />

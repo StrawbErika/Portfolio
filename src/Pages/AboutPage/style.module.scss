@@ -22,7 +22,10 @@ $color2: #fff2f3;
       }
     }
   }
-  @media only screen and (max-width: 660px) {
+}
+@media only screen and (max-width: 660px) {
+  .about {
+    padding-top: 25%;
     .title {
       font-size: 25px;
       .hr {
@@ -32,6 +35,7 @@ $color2: #fff2f3;
     }
   }
 }
+
 .content {
   margin-top: -100px;
   display: flex;

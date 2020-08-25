@@ -19,7 +19,9 @@ export function NavBar({ highlightNav }) {
         }`}
       >
         <div className={styles.logoContainer}>
-          <img src={whiteLogo} alt="logo" />
+          <a href="#welcome">
+            <img src={whiteLogo} alt="logo" />
+          </a>
         </div>
 
         <div className={styles.linkContainer}>
@@ -42,7 +44,9 @@ export function NavBar({ highlightNav }) {
         }`}
       >
         <div className={styles.logoContainer}>
-          <img src={whiteLogo} alt="logo" />
+          <a href="#welcome">
+            <img src={whiteLogo} alt="logo" />
+          </a>
         </div>
         <div className={styles.linkContainer}>
           <a href="#works">

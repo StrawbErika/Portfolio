@@ -14,12 +14,16 @@ $color3: #ffc17f;
     margin-left: 30px;
     display: flex;
     justify-content: flex-start;
+    transition: all 0.2s ease-in-out;
     img {
       height: 100px;
     }
   }
+  .logoContainer:hover {
+    transform: scale(1.1);
+  }
   .linkContainer {
-    width: 100%;
+    width: calc(100vw - 30px);
     display: flex;
     justify-content: flex-end;
     margin-right: 30px;
@@ -70,7 +74,7 @@ $color3: #ffc17f;
   }
 
   .linkContainer {
-    width: 100%;
+    width: calc(100vw - 30px);
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
