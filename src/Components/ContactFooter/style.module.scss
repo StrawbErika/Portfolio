@@ -5,8 +5,10 @@ $color3: #ffc17f;
   color: $color3;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   height: 250px;
   padding-left: 10%;
+  padding-right: 10%;
   .title {
     font-size: 50px;
     p {
@@ -90,7 +92,6 @@ $color3: #ffc17f;
   align-items: flex-end;
   padding-top: 10px;
   font-size: 130px;
-  padding-right: 10%;
   .resume {
     display: flex;
     flex-direction: column;
@@ -145,7 +146,6 @@ $color3: #ffc17f;
     }
   }
   .resumeContainer {
-    padding-right: 8%;
     font-size: 120px;
     .resume {
       p {
@@ -158,7 +158,7 @@ $color3: #ffc17f;
 }
 @media only screen and (max-width: 800px) {
   .contact {
-    padding-bottom: 10%;
+    padding-bottom: 50px;
     width: 100%;
     height: 100%;
     margin-top: 50px;
@@ -166,6 +166,7 @@ $color3: #ffc17f;
     align-items: center;
     flex-direction: column;
     padding-left: 0px;
+    padding-right: 0px;
     .title {
       display: flex;
       align-items: center;
@@ -192,41 +193,37 @@ $color3: #ffc17f;
       }
     }
   }
-  .contactResume {
-    padding-top: 5%;
+  .buttonContainer {
     display: flex;
-    .buttonContainer {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding-right: 10px;
-      p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 15px;
-      }
-
-      a {
-        margin-left: 0px;
-      }
-      .mailButton {
-        font-size: 90px;
-      }
-      .mailButton:hover {
-        transform: scale(1.2);
-      }
+    flex-direction: column;
+    width: 100%;
+    padding-right: 10px;
+    p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 15px;
     }
-    .resumeContainer {
+
+    a {
+      margin-left: 0px;
+    }
+    .mailButton {
       font-size: 90px;
-      .resume {
-        text-align: center;
-        a {
-          padding-bottom: 0px;
-        }
-        p {
-          padding-top: 0px;
-          font-size: 15px;
-        }
+    }
+    .mailButton:hover {
+      transform: scale(1.2);
+    }
+  }
+  .resumeContainer {
+    font-size: 90px;
+    .resume {
+      text-align: center;
+      a {
+        padding-bottom: 0px;
+      }
+      p {
+        padding-top: 0px;
+        font-size: 15px;
       }
     }
   }

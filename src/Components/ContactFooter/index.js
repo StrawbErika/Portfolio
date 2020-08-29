@@ -39,20 +39,18 @@ export function ContactFooter() {
             </div>
           </div>
         </div>
-        <div className={styles.contactResume}>
-          <div className={styles.buttonContainer}>
-            <a href="mailto: erika.nepomuceno392@gmail.com">
-              <AiOutlineMail className={styles.mailButton} />
+        <div className={styles.buttonContainer}>
+          <a href="mailto: erika.nepomuceno392@gmail.com">
+            <AiOutlineMail className={styles.mailButton} />
+          </a>
+          <p> Contact me</p>
+        </div>
+        <div className={styles.resumeContainer}>
+          <div className={styles.resume}>
+            <a href={resume} download="NepomucenoResume.pdf">
+              <AiOutlineDownload className={styles.fill} />
             </a>
-            <p> Contact me</p>
-          </div>
-          <div className={styles.resumeContainer}>
-            <div className={styles.resume}>
-              <a href={resume} download="NepomucenoResume.pdf">
-                <AiOutlineDownload className={styles.fill} />
-              </a>
-              <p>Download resume here</p>
-            </div>
+            <p>Download resume here</p>
           </div>
         </div>
       </div>
