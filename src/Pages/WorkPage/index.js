@@ -23,7 +23,7 @@ export function WorkPage({ workRef }) {
       Picture: sining,
       Width: "459px",
       Ratio: "0.7",
-      Repository: "https://github.com/StrawbErika/SINING"
+      Repository: "https://github.com/StrawbErika/SINING",
     },
     {
       Title: "SOKOBAN",
@@ -36,7 +36,7 @@ export function WorkPage({ workRef }) {
       Picture: sokoban,
       Width: "960px",
       Ratio: "0.5",
-      Repository: "https://github.com/StrawbErika/Sokoban-Maze-Solver"
+      Repository: "https://github.com/StrawbErika/Sokoban-Maze-Solver",
     },
     {
       Title: "WORDSCAPE",
@@ -49,7 +49,7 @@ export function WorkPage({ workRef }) {
       Picture: wordscape,
       Width: "798px",
       Ratio: "0.5",
-      Repository: "https://github.com/StrawbErika/Wordscape-Solver"
+      Repository: "https://github.com/StrawbErika/Wordscape-Solver",
     },
     {
       Title: "RESUME",
@@ -61,8 +61,8 @@ export function WorkPage({ workRef }) {
       Picture: resume,
       Width: "1080px",
       Ratio: "0.3",
-      Repository: "https://github.com/StrawbErika/Portfolio"
-    }
+      Repository: "https://github.com/StrawbErika/Portfolio",
+    },
   ];
 
   const [percent, setPercent] = useState(0);
@@ -107,13 +107,8 @@ export function WorkPage({ workRef }) {
   }, [percent]);
   if (width < 950)
     return (
-      <div className={styles.work} ref={workRef} id="works">
-        <div className={styles.workCount} ref={workCount}>
-          <p> WORK </p>
-          <div className={styles.progressBar}>
-            <ProgressBar length={percentages[percent]} />
-          </div>
-        </div>
+      <div className={styles.work} ref={workRef}>
+        <div className={styles.workCount} ref={workCount} id="works"></div>
         <Mobile listOfDetails={details[0]} buttonRef={buttonRef0} />
         <Mobile listOfDetails={details[1]} buttonRef={buttonRef1} />
         <Mobile listOfDetails={details[2]} buttonRef={buttonRef2} />

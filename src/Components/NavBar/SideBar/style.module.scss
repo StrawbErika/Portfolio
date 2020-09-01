@@ -12,10 +12,12 @@ $color3: #ffc17f;
     display: flex;
     flex-direction: column;
     position: absolute;
+    left: 0px;
+    bottom: 0px;
     top: 0px;
     right: 0px;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw + 10px);
+    height: calc(100vh + 10px);
     background-color: $color1;
     .closeButton {
       z-index: 10000;

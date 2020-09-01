@@ -91,7 +91,7 @@ export function ContactFooter() {
         <div className={styles.resumeContainer}>
           <div className={styles.resume}>
             <a href={resume} download="NepomucenoResume.pdf">
-              <AiFillFile className={styles.fill} />
+              <AiOutlineDownload className={styles.fill} />
             </a>
             <p>NepomucenoResume.pdf</p>
           </div>
