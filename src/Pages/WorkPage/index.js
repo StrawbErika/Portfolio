@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import styles from "./style.module.scss";
 import { Mobile } from "./Mobile";
 import { Project } from "./Project";
-import { ProgressBar } from "./../../Components/ProgressBar";
 import { useWindowSize } from "react-use";
 import sining from "./../../Assets/Images/sining.png";
 import sokoban from "./../../Assets/Images/sokoban.png";
@@ -11,7 +10,6 @@ import resume from "./../../Assets/Images/resume.png";
 
 export function WorkPage({ workRef }) {
   const { width } = useWindowSize();
-  const percentages = ["33.3333333333%", "66.6666666666%", "100%"];
   const details = [
     {
       Title: "SINING",

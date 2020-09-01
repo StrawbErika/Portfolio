@@ -5,9 +5,8 @@ import {
   AiFillInstagram,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillFile,
   AiOutlineMail,
-  AiOutlineDownload
+  AiOutlineDownload,
 } from "react-icons/ai";
 import { useWindowSize } from "react-use";
 
