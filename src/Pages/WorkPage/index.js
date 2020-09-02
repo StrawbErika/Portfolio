@@ -54,6 +54,7 @@ export function WorkPage({ workRef }) {
       Subtitle: "WEBSITE",
       Description:
         "Created a responsive website that would showcase the personal projects made. Refer to Contact to download the resume.",
+      TechStack: "ReactJS, HTML5, CSS, SASS",
       Count: "04",
       Percent: "100%",
       Picture: resume,
