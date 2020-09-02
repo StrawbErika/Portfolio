@@ -1,16 +1,14 @@
-.project {
-  .perProject {
-    background-color: #111517;
-    width: 100%;
+.perProject {
+  background-color: #111517;
+  width: 100%;
+  display: flex;
+  padding-top: 5%;
+  .projectPicsContainer {
+    margin-top: -30px;
     display: flex;
-    padding-top: 5%;
-    .projectPicsContainer {
-      padding-top: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 50%;
-    }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
   }
 }
